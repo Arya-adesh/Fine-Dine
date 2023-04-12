@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxlogin.InfoController">
+    <children>
+      <ImageView fx:id="infoimg" fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../target/istockphoto-936991552-170667a.jpg" />
+         </image>
+      </ImageView>
+          <Label fx:id="label" layoutX="322.0" layoutY="39.0" text="Welcome" textAlignment="CENTER" textFill="#ff8000">
+              <font>
+                  <Font name="System Bold" size="24.0" />
+              </font>
+          </Label>
+          <Button fx:id="backbut" layoutX="392.0" layoutY="335.0" mnemonicParsing="false" onAction="#back" text="Back">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+          <Button fx:id="butlogout" layoutX="466.0" layoutY="335.0" mnemonicParsing="false" onAction="#logout" text="Log Out">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+          <Button fx:id="butnext" layoutX="312.0" layoutY="335.0" mnemonicParsing="false" onAction="#next" text="Next">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="238.0" layoutY="139.0" text="Enter intollerences">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="238.0" layoutY="186.0" text="Enter calories">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="241.0" layoutY="277.0" text="Enter veg or nonveg">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="241.0" layoutY="231.0" text="Enter cuisine">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="intol" layoutX="421.0" layoutY="278.0" onAction="#next" />
+      <TextField fx:id="cal" layoutX="421.0" layoutY="232.0" />
+      <TextField fx:id="veg" layoutX="421.0" layoutY="187.0" />
+      <TextField fx:id="cuis" layoutX="421.0" layoutY="140.0" />
+        <Label layoutX="235.0" layoutY="93.0" text="Please enter the below details">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
